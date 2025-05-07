@@ -6,12 +6,13 @@ function Iphone() {
   const [Iphone, setIphone] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:3005/get-products`)
-      .then((res) => res.json())
-      .then((data) => {
-        setIphone(data);
-      })
-      .catch((error) => console.error(error));
+    // fetch(`http://localhost:3005/get-products`)
+     fetch(`/data.json`)
+       .then((res) => res.json())
+       .then((data) => {
+         setIphone(data);
+       })
+       .catch((error) => console.error(error));
   }, []);
   return (
     <>

@@ -6,10 +6,11 @@ function SinglePdt() {
   const { productId } = useParams();
   // console.log(productId);
   useEffect(() => {
-    fetch(`http://localhost:3005/get-products/${productId}`)
+    // fetch(`http://localhost:3005/get-products/${productId}`)
+    fetch(`./data.json/${productId}`)
       .then((res) => res.json())
       .then((data) => {
-         setProduct(data);
+        setProduct(data);
       })
       .catch((err) => console.error(err));
   }, []);

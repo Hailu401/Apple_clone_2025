@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Hailu401.github.io/Apple_clone_2025",
   "name": "react-apple",
   "private": true,
   "version": "0.0.0",
@@ -6,10 +7,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "jquery": "^3.7.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

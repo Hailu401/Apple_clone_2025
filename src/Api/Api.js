@@ -1,7 +1,7 @@
+const apikey = import.meta.env.VITE_API_KEY;
 export const AccessPoint = {
-  Full_Api_key:
-    "https://www.googleapis.com/youtube/v3/search?key=AIzaSyBoR-GUlxfL1CHztZ28oMzj3kh-gtneWXo&channelId=UCE_M8A5yxnLfW0KghEeajjw&part=snippet,id&order=date&maxResults=8",
-  key: "AIzaSyBoR-GUlxfL1CHztZ28oMzj3kh-gtneWXo",
+  Full_Api_key: `https://www.googleapis.com/youtube/v3/search?key=${apikey}&channelId=UCE_M8A5yxnLfW0KghEeajjw&part=snippet,id&order=date&maxResults=8`,
+
   Api_channel:
-    "https://www.googleapis.com/youtube/v3/channels?key=AIzaSyBoR-GUlxfL1CHztZ28oMzj3kh-gtneWXo&forUsername=Apple&part=id",
+    `https://www.googleapis.com/youtube/v3/channels?key=${apikey}&forUsername=Apple&part=id`
 };

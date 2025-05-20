@@ -5,15 +5,15 @@ function YoutubeVideos() {
   const [Videos, setVideos] = useState([]);
   const full_api = AccessPoint.Full_Api_key
 
-  // useEffect(()=>{
+  useEffect(()=>{
 
-  //     fetch(full_api).then((res)=> res.json()).then((data)=>{
-  //       setVideos(data.items)
-  //     }).catch((err)=>{
-  //       console.log("something went wrong", err);
-  //     });
+      fetch(full_api).then((res)=> res.json()).then((data)=>{
+        setVideos(data.items)
+      }).catch((err)=>{
+        console.log("something went wrong", err);
+      });
 
-  // },[])
+  },[])
 
   // console.log(Videos);
 

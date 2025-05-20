@@ -1,4 +1,4 @@
-import Alert from "./Alert-section/Alert";
+
 import IpadPro from "./Ipad-pro-section/IpadPro";
 import MacBook from "./MacBook-section/MacBook";
 import Iphone11Pro from "./Iphone-11-Pro-section/Iphone11Pro";
@@ -8,7 +8,7 @@ import YoutubeVideos from "./Youtube-Videos/YoutubeVideos";
 const Main = () => {
   return (
     <>
-      <Alert />
+      {/* <Alert /> */}
       <IpadPro />
       <MacBook />
       <Iphone11Pro />

@@ -1,24 +1,28 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { data } from "../../../Data/data";
 
 function SinglePdt() {
-  const [product, setProduct] = useState([]);
+  const [product, setProduct] = useState(data);
   const { productId } = useParams();
   // console.log(productId);
+const singlep = product.filter((data)=> productId == data.ID)
+
   useEffect(() => {
+    
     // fetch(`http://localhost:3005/get-products/${productId}`)
-    fetch(`./data.json/${productId}`)
-      .then((res) => res.json())
-      .then((data) => {
-        setProduct(data);
-      })
-      .catch((err) => console.error(err));
+    // fetch(`data.${productId}`)
+    //   .then((res) => res.json())
+    //   .then((data) => {
+    //     setProduct(data);
+    //   })
+    //   .catch((err) => console.error(err));
   }, []);
-  console.log(product);
+ 
   return (
     <>
       <div className="container mt-5 pt-4">
-        {product?.map((singleItem) => {
+        {singlep?.map((singleItem) => {
           return (
             <>
               <div className="text-center ">

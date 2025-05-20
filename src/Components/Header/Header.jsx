@@ -24,7 +24,7 @@ function Header() {
             <div className="navbar-collapse collapse">
               <ul className="navbar-nav nav-justified w-100 nav-fill">
                 <li className="nav-item">
-                  <a className="nav-link js-scroll-trigger" href="/mac/">
+                  <a className="nav-link js-scroll-trigger" href="/">
                     Mac
                   </a>
                 </li>

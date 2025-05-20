@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import style from "./Iphone.module.css";
+import { data } from "../../../Data/data";
 
 function Iphone() {
-  const [Iphone, setIphone] = useState([]);
+  const [Iphone, setIphone] = useState(data);
 
-  useEffect(() => {
-    // fetch(`http://localhost:3005/get-products`)
-     fetch(`/data.json`)
-       .then((res) => res.json())
-       .then((data) => {
-         setIphone(data);
-       })
-       .catch((error) => console.error(error));
-  }, []);
+  // useEffect(() => {
+  //   fetch(`http://localhost:3005/get-products`)
+  //   //  fetch(data)
+  //      .then((res) => res.json())
+  //      .then((data) => {
+  //        setIphone(data);
+  //      })
+  //      .catch((error) => console.error(error));
+  // }, []);
   return (
     <>
       <section className={style.section}>
